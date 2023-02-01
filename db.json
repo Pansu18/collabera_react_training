@@ -20,6 +20,21 @@
     {
       "cityName": "Mumbai",
       "temp": 30,
+      "tempType": "F"
+    },
+     {
+      "cityName": "Manila",
+      "temp": 35,
+      "tempType": "C"
+    },
+    {
+      "cityName": "Makati",
+      "temp": 36,
+      "tempType": "C"
+    },
+    {
+      "cityName": "Baguio",
+      "temp": 16,
       "tempType": "C"
     }
   ]
