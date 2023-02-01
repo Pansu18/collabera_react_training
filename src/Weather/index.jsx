@@ -11,6 +11,7 @@ export default class Weather extends PureComponent {
   };
 
   weatherText = createRef();
+  console.log('test push')
 
   loadWeather = async(event) => {
     try {
