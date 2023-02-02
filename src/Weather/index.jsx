@@ -5,13 +5,13 @@ import WeatherList from './weatherInfo';
 
 export default class Weather extends PureComponent {
   state = {
+    // this should be object
     weatherList: [],
     viewList: false,
     error: null,
   };
 
   weatherText = createRef();
-  console.log('test push')
 
   loadWeather = async(event) => {
     try {
@@ -29,11 +29,13 @@ export default class Weather extends PureComponent {
 
       this.setState({ weatherList: json, viewList: true });
 
+      // nver set the in the try
       if(json.length === 0) {
         return this.setState({error: 'No Data Available'})
       } else {
         return this.setState({ error: null })
       }
+
     } catch (error) {
       this.setState({ error });
     }
