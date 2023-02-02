@@ -4,7 +4,7 @@ import WeatherListItem from './weatherListItem';
 
 function WeatherInfo({ weatherList }) {
   return (
-    <div className="w-full flex-1 overflow-y-auto mt-[30px] mb-[30px] shadow-lg bg-white">
+    <div className="w-full flex-1 mt-[30px] mb-[30px] shadow-lg bg-white">
       {weatherList.map(item => (
         <WeatherListItem
           key={item.cityName}
